@@ -2,6 +2,7 @@
 
 ```clojure
 (-> select users where {:id 10})
+(-> users[:id] where {:id 3})
 (-> users where {:id 10})
 (-> users limit 5)
 
