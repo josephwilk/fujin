@@ -8,5 +8,5 @@
 (-> insert users {:id 1 :monkeys true})
 
 ;update
-(-> update users {:id 1 :monkeys true})
+(-> update users {:monkeys false} where {:id 1})
 ```
