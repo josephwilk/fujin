@@ -3,6 +3,7 @@
 ```clojure
 ;select
 (-> select users where {:id 10})
+(-> users where {:id 10})
 
 ;insert
 (-> insert users {:id 1 :monkeys true})
