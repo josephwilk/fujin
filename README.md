@@ -4,6 +4,10 @@
 
 (deftables users)
 
+(select-> users where {:id 10})
+
+;SELECT * FROM users WHERE id=10
+
 (-> select users where {:id 10})
 ;SELECT * FROM users WHERE id=10
 
@@ -20,9 +24,12 @@
 ;SELECT * FROM users
 
 
+(insert-> users {:id 1 :monkeys true})
 (-> insert users {:id 1 :monkeys true})
 
 (-> update users {:monkeys false} where {:id 1})
+
+(update-> users {:monkeys false} where id=1)
 ```
 
 
