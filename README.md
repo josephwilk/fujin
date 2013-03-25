@@ -2,7 +2,14 @@
 
 ```clojure
 
-(deftables users)
+;Relationships
+(deftables users monkies)
+
+(deftable-> users (has-one monkies))
+
+(deftable users
+  (has-many monkies))
+
 
 (select-> users where {:id 10})
 ;SELECT * FROM users WHERE id=10
