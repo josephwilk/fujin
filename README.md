@@ -15,3 +15,8 @@
 
 (-> update users {:monkeys false} where {:id 1})
 ```
+
+
+## Other related projects
+* ClojureQL: http://clojureql.org/examples.html
+* Korma: https://github.com/korma/Korma
