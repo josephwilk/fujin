@@ -1,6 +1,9 @@
 #Fujin
 
 ```clojure
+
+(deftables users)
+
 (-> select users where {:id 10})
 (-> (:id users) where {:id 3})
 (-> users where {:id 10})
