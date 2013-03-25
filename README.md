@@ -5,7 +5,6 @@
 (deftables users)
 
 (select-> users where {:id 10})
-
 ;SELECT * FROM users WHERE id=10
 
 (-> select users where {:id 10})
@@ -23,13 +22,24 @@
 (users)
 ;SELECT * FROM users
 
+(-> select users where (and {:id 1} {:name "joe"} {:age [> 18]}))
+;SELECT * FROM users where id = 1 AND name = "joe" AND age > 18
 
 (insert-> users {:id 1 :monkeys true})
 (-> insert users {:id 1 :monkeys true})
 
-(-> update users {:monkeys false} where {:id 1})
+(-> insert users {:id 1 :monkeys true :sum ["sum - ?" [10]]})
 
 (update-> users {:monkeys false} where id=1)
+(-> update users {:monkeys false} where {:id 1})
+
+(-> delete users where {:id 1})
+
+(-> transaction insert users {:id 1 :monkeys true} rollback)
+(-> transaction insert users {:id 1 :monkeys true} commit)
+(-> transaction insert users {:id 1 :monkeys true})
+
+(sql "SELECT * from users")
 ```
 
 
