@@ -1,5 +1,7 @@
 #Fujin
 
+[![Build Status](https://travis-ci.org/josephwilk/fujin.png?branch=master)](https://travis-ci.org/josephwilk/fujin)
+
 ```clojure
 
 ;Relationships
