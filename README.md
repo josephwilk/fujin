@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/josephwilk/fujin.png?branch=master)](https://travis-ci.org/josephwilk/fujin)
 
+
 ```clojure
 
 ;Relationships
@@ -55,4 +56,4 @@
 ## Other related projects
 * ClojureQL: http://clojureql.org/examples.html
 * Korma: https://github.com/korma/Korma
-* http://clojure.github.com/clojure-contrib/sql-api.html
+* SQL api :http://clojure.github.com/clojure-contrib/sql-api.html
