@@ -57,3 +57,8 @@
 * ClojureQL: http://clojureql.org/examples.html
 * Korma: https://github.com/korma/Korma
 * SQL api :http://clojure.github.com/clojure-contrib/sql-api.html
+
+
+##Contributors:
+* [Joseph Wilk](http://blog.josephwilk.net)
+* [Thiago Nunes](http://github.com/thiagotnunes)
